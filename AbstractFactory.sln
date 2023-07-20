@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C#", "C#", "{3ACB4123-C880-40CB-8E6A-179FEF425B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "C#\AbstractFactory\AbstractFactory.csproj", "{87896A9A-7933-4493-B9F3-3C579D36109C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87896A9A-7933-4493-B9F3-3C579D36109C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87896A9A-7933-4493-B9F3-3C579D36109C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87896A9A-7933-4493-B9F3-3C579D36109C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87896A9A-7933-4493-B9F3-3C579D36109C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87896A9A-7933-4493-B9F3-3C579D36109C} = {3ACB4123-C880-40CB-8E6A-179FEF425B72}
+	EndGlobalSection
+EndGlobal
