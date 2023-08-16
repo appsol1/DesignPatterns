@@ -1,0 +1,49 @@
+@startuml
+scale 2
+class AppBar {
+    string[] Properties
+    string[] Links
+    string Title
+    string[] Actions
+
+    void ShowAppBar()
+}
+
+abstract class IAppBarBuilder {
+    AppBar appBar
+
+    abstract void SetProperties()
+    abstract void SetLinks()
+    abstract void SetTitle()
+    abstract void SetActions()
+    
+    void CreateAppBar()
+    AppBar GetAppBar()
+}
+
+class CalendarAppBarBuilder {
+    void SetProperties()
+    void SetTitle()
+    void SetLinks()
+    void SetActions()
+}
+
+class NotificationsAppBarBuilder {
+    void SetProperties()
+    void SetTitle()
+    void SetLinks()
+    void SetActions()
+}
+
+class AppBarDirector {
+    AppBar Build(IAppBarBuilder appBarBuilder)
+}
+
+' IAppBarBuilder *-- AppBar
+IAppBarBuilder <|-- CalendarAppBarBuilder
+IAppBarBuilder <|-- NotificationsAppBarBuilder
+AppBarDirector o-- IAppBarBuilder
+AppBar <.. CalendarAppBarBuilder
+AppBar <.. NotificationsAppBarBuilder
+
+@enduml
