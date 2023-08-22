@@ -1,0 +1,38 @@
+@startuml
+scale 2
+abstract class BakeryItem {
+    string ItemType()
+    decimal GetPrice()
+}
+
+class Pizza {
+    string ItemType()
+    decimal GetPrice()
+}
+
+class Cake {
+    string ItemType()
+    decimal GetPrice()
+}
+
+abstract class BakeryFactory {
+    abstract BakeryItem Create()
+}
+
+class PizzaFactory {
+    BakeryItem Create()
+}
+
+class CakeFactory {
+    BakeryItem Create()
+}
+
+' IAppBarBuilder *-- AppBar
+BakeryFactory <|-- PizzaFactory
+BakeryFactory <|-- CakeFactory
+BakeryItem <|-- Pizza
+BakeryItem <|-- Cake
+Pizza <.. PizzaFactory
+Cake <.. CakeFactory
+
+@enduml
